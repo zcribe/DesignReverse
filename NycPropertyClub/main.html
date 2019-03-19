@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" id="navbar-content">
+              <a class="nav-item nav-link navbar-item" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link navbar-item" href="#">Features</a>
+              <a class="nav-item nav-link navbar-item" href="#">Pricing</a>
+              <a class="nav-item nav-link navbar-item" href="#"><button type="button" class="btn btn-outline-primary">Primary</button></a>
+            </div>
+          </div>
+        </nav>
+    </navbar>
+    <section>
+        <div id="main-bg"></div>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <h1 class="hero-headline col-12">NYC Real Estate</h1>
+                </div>
+                <div class="row  pt-4">
+                    <ul class="nav nav-pills mb-3 col-12" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Rent</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Buy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">List</a>
+                      </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                          <h3>Apartments for rent in NYC</h3>
+                          <p>NYC apartments, condos, penthouses, brownstones and houses for rent.</p>
+                          <form>
+                              <input type="text" class="form-control form-control-lg mb-3 card-input" placeholder="Neighbourhood">
+                              <div class="input-group mb-3">
+                                  <input type="text" class="form-control form-control-lg card-input" placeholder="Minimum">
+                                  <input type="text" class="form-control form-control-lg card-input" placeholder="Maximum">
+                              </div>
+                              <div>
+                                  <div class="form-check form-check-inline mb-3" id="selector">
+                                      <i id="" class="fas fa-bed"></i>
+                                      <input class="form-check-input selection" type="button" id="selector-studio" value="Studio" aria-label="...">
+                                      <input class="form-check-input selection" type="button" id="selector-one" value="1" aria-label="...">
+                                      <input class="form-check-input selection" type="button" id="selector-two" value="2" aria-label="...">
+                                      <input class="form-check-input selection" type="button" id="selector-three" value="3" aria-label="...">
+                                      <input class="form-check-input selection" type="button" id="selector-four" value="4+" aria-label="...">
+                                  </div>
+
+                                  <div>
+                                    <input id="selection-submit" class="btn btn-primary" type="submit" value="Submit">
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <img src="images/istuv.svg" alt="" id="second-bg">
+                </div>
+                <div class="col-5">
+                    <h3>
+                        Lorem ipsum dolor sit amet
+                    </h3>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, laudantium quaerat. Amet assumenda consectetur dolor eaque enim facere facilis illum maxime modi nam quaerat quasi, quisquam sed suscipit temporibus unde!
+                    </p>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab at earum eligendi fuga nemo nobis non officia quod similique? Aperiam illum quas tempora tenetur. Cum laboriosam perferendis ut voluptatum!
+                    </p>
+                    <p>
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem beatae ipsum, itaque iusto quaerat velit veniam veritatis! Animi beatae commodi modi quam quasi ratione, reprehenderit soluta suscipit tempora vel!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="promo">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <a href=""><button type="button" class="btn btn-danger special">Danger</button></a>
+                <a href=""><button type="button" class="btn btn-warning special">Warning</button></a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+            <h5>Lorem ipsum dolor</h5>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/annie-spratt-785768-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/kari-shea-180802-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/dan-gold-220226-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="mt-3">consectetur adipisicing</a>
+        </div>
+        <div class="container pt-5">
+            <h5>Lorem ipsum dolor</h5>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/deborah-cortelazzi-615800-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/jarek-ceborski-250955-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/justin-schuler-253611-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <h5>Lorem ipsum dolor</h5>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/annie-spratt-785768-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/kari-shea-180802-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="images/kohad/dan-gold-220226-unsplash.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                            <h3 class="card-title"><span class="price">9,000,000</span> <span class="rooms"><i class="fas fa-bed"></i> 2bd <i class="fas fa-bath"></i> 2ba</span></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="pt-3">consectetur adipisicing</a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3>Lorem ipsum dolor sit amet</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae consectetur dolor dolore ea esse ipsam ipsum iusto, magni modi odit optio perspiciatis quasi quia recusandae suscipit unde? Dolores, explicabo.
+                    </p>
+                </div>
+                <div class="col-6 hidden-xs">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+
+    </section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    $(".selection").click(function () {
+        $()
+    })
+</script>
+</body>
+</html>
