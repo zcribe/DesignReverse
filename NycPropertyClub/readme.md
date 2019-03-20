@@ -1,0 +1,1 @@
+An attempt to learn from some design decision involved with the website https://propertyclub.nyc/. The goal was to make a rough recreation of it.
