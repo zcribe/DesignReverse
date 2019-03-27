@@ -5,6 +5,52 @@ a, u {
 
 
 // Generic components
+.two-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+      "one two";
+}
+
+.three-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  grid-template-areas:
+      "one two three";
+}
+
+.four-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+              "one two three four";
+}
+
+.section-one{
+  grid-area: one;
+}
+
+.section-two{
+  grid-area: two;
+}
+
+.section-three{
+  grid-area: three;
+}
+
+.section-four{
+  grid-area: four;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.align-center{
+  align-items: center;
+}
+
 .container{
   padding: 24px 96px;
   margin: 0 auto;
@@ -75,6 +121,15 @@ a, u {
   overflow: hidden;
 }
 
+.image-300{
+  height: 300px;
+  object-fit: cover;
+}
+
+.p-20{
+  padding: 20px;
+}
+
 .w-50{
   width: 50%;
 }
@@ -85,6 +140,7 @@ a, u {
     "two-one two-two";
   grid-template-columns: 50% 50%;
   grid-gap: 15px;
+  height: 100%;
 }
 
 .two-card-one{
@@ -96,19 +152,6 @@ a, u {
 }
 
 // Index Core
-#navigation {
-  height: 100px;
-}
-
-#navbar{
-  margin: 24px auto 24px auto;
-  padding-left: 96px;
-  padding-right: 96px;
-  max-width: 1056px;
-  border: 1px solid red;
-  height: 100px;
-
-}
 
 #index-core{
   max-width: 1440px;
@@ -125,6 +168,92 @@ a, u {
     "blog blog blog blog"
     "articles-more-2 articles-more-2 articles-more-2 articles-more-2"
     "empower-2 empower-2 empower-2 empower-2";
+}
+
+// Navbar
+#navigation {
+  height: 100px;
+}
+
+#navbar{
+  margin: 0 auto 24px auto;
+  padding-left: 96px;
+  padding-right: 96px;
+  max-width: 1056px;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+
+}
+
+.logo{
+  background-color: black;
+  color: white;
+  padding: 4px;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.logo:visited{
+  color: white;
+}
+
+#navbar-download{
+  padding: 5px;
+  border: 2px solid blue;
+  border-radius: 2px;
+  color: blue;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  transition: color .1s, border .1s, background-color .1s;
+}
+
+#navbar-download:hover{
+  color: white;
+  background-color: blue;
+  border: 2px solid transparent;
+}
+
+.navbar-button{
+  font-weight: 400;
+  color: black;
+  margin: 0 10px;
+}
+
+.navbar-collapsible{
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  height: 500px;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 2;
+}
+
+.navbar-card-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar-card-title{
+  margin: 0;
+}
+
+.navbar-card-title:hover{
+  text-decoration: underline;
+}
+
+.nav-card{
+  padding-left: 50px;
+}
+
+.nav-card-logo{
+  position: relative;
 }
 
 // Index Hero section
@@ -226,34 +355,29 @@ a, u {
   height: 300px;
 }
 
-#empower > .container{
-  height: 100%;
-  padding: 24px 96px;
-}
-
 .empower-background{
-  background-color: lightgrey;
-  height: 100%;
-  width: 100%;
-  margin: 100px 0;
+  background: #ededf0;
 }
 
 // More articles
 #articles-more{
   grid-area: articles-more;
   height: 500px;
+  margin-bottom: 50px;
 }
 
 // Blog
 #blog{
   grid-area: blog;
   height: 500px;
+  margin: 100px 0;
 }
 
 // More 2
 #articles-more-2{
   grid-area: articles-more-2;
   height: 500px;
+  margin-bottom: 50px;
 }
 
 // Empower section 2
