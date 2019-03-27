@@ -13,11 +13,10 @@
             <div>
                 <a href=""><span class="logo">l0rem</span></a>
             </div>
-            <div id="navbar-button-bar">
-                <a href=""><span class="navbar-button">Lorem</span></a>
-                <a href=""><span class="navbar-button">Lorem</span></a>
-                <a href=""><span class="navbar-button">Lorem</span></a>
-                <a href=""><span class="navbar-button">Lorem</span></a>
+            <div id="navbar-button-bar" onmouseover="show('nav-panel')">
+                <span class="navbar-button-link" id="lorem">
+                    MAJAKAS
+                </span>
             </div>
             <a href="" id="navbar-download-link">
                 <div id="navbar-download">
@@ -25,9 +24,9 @@
                 </div>
             </a>
         </div>
-    </nav>
 
-    <section class="navbar-collapsible three-section">
+    </nav>
+    <section onmouseleave="hide('nav-panel')" id="nav-panel" class="navbar-collapsible three-section">
         <article class="section-one p-20">
             <div class="card">
                 <div class="card-content nav-card">
@@ -105,6 +104,7 @@
         </article>
 
     </section>
+
 
     <main id="index-core">
         <section id="hero">
@@ -278,4 +278,14 @@
 
     </footer>
 </body>
+<script>
+    var show = function (id) {
+        document.getElementById(id).style.visibility = "visible";
+    };
+
+    var hide = function (id) {
+        document.getElementById(id).style.visibility = "hidden";
+    };
+
+</script>
 </html>

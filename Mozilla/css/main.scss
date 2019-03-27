@@ -227,12 +227,15 @@ a, u {
   top: 100px;
   left: 0;
   right: 0;
-  height: 500px;
+  height: 450px;
   width: 100%;
   max-width: 1040px;
   margin: 0 auto;
   background-color: white;
   z-index: 2;
+  visibility: hidden;
+  transition: visibility .1s;
+  box-shadow: 0 32px 32px -32px rgba(0,0,0,.3);
 }
 
 .navbar-card-list{
@@ -255,6 +258,11 @@ a, u {
 .nav-card-logo{
   position: relative;
 }
+
+.navbar-button-link{
+  padding: 100px 0;
+}
+
 
 // Index Hero section
 
