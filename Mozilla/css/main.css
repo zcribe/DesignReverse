@@ -275,6 +275,9 @@ body {
 .empower-background {
   background: #ededf0; }
 
+#tree {
+  width: 300px; }
+
 #articles-more {
   grid-area: articles-more;
   height: 500px;
